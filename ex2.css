@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    background-color: #2f6177;
+    color: #fff;
+    font-family: system-ui;
+}
+
+#clouds {
+    background-image: url(https://www.encyclopedie-environnement.org/app/uploads/2020/09/Couv-nuages.jpg);
+    height: 125px;
+    background-position: center;
+    background-size: cover;
+}
+
+#toplink {
+    margin-top: -25px;
+    margin-bottom: 0;
+}
+
+#toplink a {
+    color: red;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    background: black;
+    font-size: 3em;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: end;
+    padding-right: 10px;
+    background: #1cdcc8;
+    color: black;
+}
+
+#bottomlink {
+    color: #a38adf;
+    font-weight: bold;
+}
