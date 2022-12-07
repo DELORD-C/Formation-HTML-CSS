@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Avenir, sans-serif;
+}
+
+nav {    
+    position: sticky;
+    top: 0px;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.conteneur {
+    height: 800px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+/* SI ON VEUT UTILISER FLEX : */
+/* ul {
+    display: flex;
+}
+
+li {
+    width: 25%;
+} */
+/* FIN */
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    display: block;
+    padding: 10px;
+}
+
+a:hover {
+    color: rgb(255, 204, 0);
+    border-bottom: rgb(255, 204, 0) 2px solid;
+    margin-bottom: -2px;
+}
+
+.sous {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+}
+
+li:hover .sous {
+    display: block;
+}
+
+nav > ul > li:nth-child(even) li a:hover {
+    color: rgb(255, 0, 0);
+    border-bottom: rgb(255, 0, 0) 2px solid;
+}
+
+.deroulant {
+    position: relative;
+}
+
+.deroulant > a::after {
+    content: "▼";
+}
