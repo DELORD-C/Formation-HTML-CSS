@@ -1,0 +1,32 @@
+body {
+    background-color: blueviolet;
+}
+
+button {
+    border: 1px solid black;
+    background: none;
+    padding: 0 30px;
+    transition: 0.3s;
+    position: relative;
+}
+
+button:hover {
+    color: #fff;
+    cursor: pointer;
+    box-shadow: inset 8em 0 0 0 black;
+}
+
+/* button:hover div {
+    width: 100%;
+}
+
+div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: black;
+    transition: 0.3s;
+    z-index: -1;
+} */
