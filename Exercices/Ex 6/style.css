@@ -1,11 +1,61 @@
 body {
-    background-color: blueviolet;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    gap: 20px;
 }
 
 button {
-    border: 1px solid black;
+    border: 1px solid #fff;
     background: none;
     padding: 10px 30px;
-    transition: 0.3s;
+    transition: 0.5s;
     position: relative;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.fill {
+    border-color: orangered;
+    color: orangered;
+}
+
+.raise {
+    border-color: red;
+    color: red;
+}
+
+.fillin {
+    border-color: rgb(255, 0, 115);
+    color: rgb(255, 0, 115);
+}
+
+.pulse {
+    border-color: rgb(140, 0, 255);
+    color: rgb(140, 0, 255);
+}
+
+.close {
+    border-color: rgb(45, 39, 196);
+    color: rgb(45, 39, 196);
+}
+
+.rotate {
+    border-color: rgb(0, 179, 255);
+    color: rgb(0, 179, 255);
+}
+
+.fill:hover {
+    color: rgb(31, 31, 31);
+    box-shadow: inset 8em 0 0 0 orangered;
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em red;
+  transform: translateY(-0.25em);
 }
