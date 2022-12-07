@@ -2,7 +2,7 @@ body {
     background-color: blueviolet;
 }
 
-button {
+.fill {
     border: 1px solid black;
     background: none;
     padding: 0 30px;
@@ -10,17 +10,17 @@ button {
     position: relative;
 }
 
-button:hover {
+.fill:hover {
     color: #fff;
     cursor: pointer;
     box-shadow: inset 8em 0 0 0 black;
 }
 
-/* button:hover div {
+/* .fill:hover div {
     width: 100%;
 }
 
-div {
+.fill div {
     position: absolute;
     top: 0;
     left: 0;
