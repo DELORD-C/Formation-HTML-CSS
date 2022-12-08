@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    color: red;
+    /* color: red; */
 }
 
 /* * {
@@ -19,13 +19,13 @@ p {
 
 } */
 
-table {
+/* table {
     border-collapse: collapse;
 }
 
 th, td {
     border: 1px solid #ff0000;
-}
+} */
 
 p {
  color: red;
