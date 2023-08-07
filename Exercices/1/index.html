@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="nom">Nom</label>
+            <input id="nom" name="nom" required>
+        </div>
+        <div>
+            <label for="prenom">Prénom</label>
+            <input id="prenom" name="prenom" required>
+        </div>
+        <div>
+            <label for="mail">Email</label>
+            <input id="mail" name="mail" type="email" required>
+        </div>
+        <div>
+            <label for="tel">Téléphone</label>
+            <input id="tel" name="tel" type="tel" required>
+        </div>
+        <div>
+            <label for="marital">Situation Maritale</label>
+            <select id="marital" name="marital" required>
+                <option>Marié(e)</option>
+                <option>Célibataire</option>
+                <option>Divorcé(e)</option>
+            </select>
+        </div>
+        <div>
+            <p>Avez-vous déjà suivi une formation Dawan ?</p>
+            <div>
+                <label for="yes">Oui</label>
+                <input type="radio" name="formation" id="yes">
+            </div>
+            <div>
+                <label for="no">Non</label>
+                <input type="radio" name="formation" id="no" checked>
+            </div>
+        </div>
+        <div>
+            <label for="observations">Observations</label>
+            <textarea id="observations" name="observations" required></textarea>
+        </div>
+        <div>
+            <label for="conditions">J'accepte les conditions d'utilisations</label>
+            <input type="checkbox" id="conditions" name="conditions" required>
+        </div>
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
