@@ -11,6 +11,18 @@ h1 {
    color: rgb(0, 110, 255); 
 }
 
+.blue {
+    color: rgb(255, 0, 0); 
+ }
+
+#vert:hover {
+    color: green;
+}
+
+div {
+    color: black;
+}
+
 #quatre {
     font-size: 30px;
 }
@@ -19,6 +31,3 @@ h1 {
   font-style: italic;
 }
 
-#vert:hover {
-    color: green;
-}
