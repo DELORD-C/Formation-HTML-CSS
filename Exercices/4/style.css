@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*, b {
+    font-family: Roboto Slab;
+    color: rgb(27, 27, 27);
+}
+
+p {
+    color: #949fa7;
+    font-size: 0.85em;
+    line-height: 1.6em;
+}
+
+body {
+    padding: 50px;
+}
+
+body > img {
+    display: none;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+h2 {
+    display: inline-block;
+    border-bottom: 3px solid #f56a6a;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    background-color: transparent;
+    color: #f56a6a;
+    border: 2px solid #f56a6a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+hr {
+    border-color: #7f888f42;
+    margin: 100px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #f56a6a;
+    margin-bottom: 100px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.main img {
+    border-radius: 10px;
+}
+
+.major {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.icons > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.icons > div > div {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    padding: 20px;
+    gap: 40px;
+    align-items: center;
+}
+
+.icons > div > div > div:first-child {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    rotate: 45deg;
+}
+
+.icons > div > div > div:first-child img {
+    rotate: -45deg;
+}
+
+.images > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 -40px;
+}
+
+.images > div > div {
+    padding: 40px;
+}
+
+.images > div > div img {
+    border-radius: 10px;
+}
+
+.images > div > div:nth-child(1), .images > div > div:nth-child(2), .images > div > div:nth-child(3) {
+    border-bottom: #c3c3c3 1px solid;
+}
+
+.images > div > div:nth-child(2), .images > div > div:nth-child(5) {
+    border-left: #c3c3c3 1px solid;
+    border-right: #c3c3c3 1px solid;
+}
