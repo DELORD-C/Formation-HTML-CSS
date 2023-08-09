@@ -45,6 +45,14 @@ button {
     border-radius: 5px;
     font-weight: bold;
     margin-top: 20px;
+    box-shadow: 0 0 0 0 #f56a6a inset;
+    transition: 0.5s ease-in-out;
+    animation: oscillation 1s infinite alternate;
+}
+
+button:hover {
+    color: #fff;
+    box-shadow: 0 30px 0 0 #f56a6a inset;
 }
 
 hr {
@@ -126,4 +134,14 @@ hr {
 .images > div > div:nth-child(2), .images > div > div:nth-child(5) {
     border-left: #c3c3c3 1px solid;
     border-right: #c3c3c3 1px solid;
+}
+
+@keyframes oscillation {
+    0% {
+        font-size: 1em;
+    }
+
+    100% {
+        font-size: 0.8em;
+    }
 }
