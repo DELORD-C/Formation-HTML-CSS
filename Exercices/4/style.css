@@ -16,7 +16,9 @@ body {
 }
 
 body > img {
-    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 h1 {
@@ -110,6 +112,7 @@ hr {
 
 .images > div > div {
     padding: 40px;
+    position: relative;
 }
 
 .images > div > div img {
