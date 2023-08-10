@@ -1,0 +1,40 @@
+@media (max-width: 1300px) {
+    td:nth-child(even) {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    tr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    body {
+        padding: 20px;
+    }
+
+    body > div {
+        margin: 50px;
+        width: unset;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        padding: 10px;
+    }
+
+    body > div {
+        margin: 20px;
+        width: unset;
+    }
+
+    table {
+        margin: 0;
+    }
+}
