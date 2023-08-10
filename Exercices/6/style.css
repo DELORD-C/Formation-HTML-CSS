@@ -122,7 +122,9 @@ button::after {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gradient {
@@ -134,6 +136,7 @@ button::after {
     object-fit: cover;
     height: 100%;
     width: 100%;
+    display: block;
 }
 
 .gradient::after {
@@ -148,11 +151,9 @@ button::after {
 }
 
 .laptop > div {
-    position: absolute;
-    top: 6.5%;
-    left: 15.7%;
-    width: 68.5%;
-    height: 76%;
+    width: 77%;
+    margin-bottom: 6%;
+    max-width: 620px;
 }
 
 .laptop > div img {
