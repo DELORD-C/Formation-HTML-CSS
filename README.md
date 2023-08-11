@@ -1,128 +1,169 @@
 # HTML CSS
 
-# Liens Utiles
+## Lexique
 
-Télécharger Visual Studio Code
-> https://code.visualstudio.com/download
+HTML : HyperText Markup Language
 
-Serveur Discord
-> https://discord.gg/ADu4Y2NvYT
+CSS : Cascading Style Sheets
 
-Lien conférence
-> https://bbb.dawan.fr/b/cle-hci-tyj-dqt
+## Liens Utiles
 
-Doc HTML
-> https://developer.mozilla.org/fr/docs/Web/HTML
+Github : https://github.com/DELORD-C/HTML-CSS/tree/07-08-2023
 
-Repo github
-> https://github.com/DELORD-C/HTML-CSS
+Css Diner : https://flukeout.github.io/
 
-Ahaslides
-> https://ahaslides.com/FDJ
+Flexbox Froggy: https://flexboxfroggy.com/#fr
 
-CSS Diner
-> https://flukeout.github.io/
+Doc CSS : https://developer.mozilla.org/fr/docs/Web/CSS/Reference
 
-Mon Compte Dawan
-> https://moncompte.dawan.fr
+Doc HTML : https://developer.mozilla.org/fr/docs/Web/HTML/Reference
 
-Material Design
-> https://www.youtube.com/watch?v=rrT6v5sOwJg
+VS Code : https://code.visualstudio.com/
 
-FlexBox Froggy
-> https://flexboxfroggy.com/#fr
+Bootstrap : https://getbootstrap.com/
 
-Outils :
-> https://chat.openai.com/chat
+Illustrations vectorielles : https://undraw.co/
 
-# Les balises HTML
+Images : https://unsplash.com/fr
 
-## Titres
+Templates :
+- https://html5up.net/
+- https://pixelarity.com/
 
-> Les balises hN représentent les titres, plus N est faible, plus le titre est important. N va de 1 à 6.
+Icons :
+> https://pictogrammers.com/library/mdi/
+> https://devicon.dev/
+> https://icons.getbootstrap.com/
+> https://fontawesome.com/start
+
+## Sujets Connexes
+
+
+
+## La structure HTML
+
+Un document HTML suis toujours la même structure de base :
 
 ```htmlmixed=
-<h1>Titre 1</h1>
-<h2>Titre 2</h2>
-<h3>Titre 3</h3>
-<h4>Titre 4</h4>
-<h5>Titre 5</h5>
-<h6>Titre 6</h6>
-<h1>Ceci est un titre</h1>
-<h2>Ceci est un autre titre 😊<\h2>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introduction</title>
+    </head>
+
+    <body>
+    </body>
+</html>
 ```
 
-## Paragraphe
+Un document HTML est composé de balises sous la forme :
+```htmlmixed=
+<!-- Avec une balise de fermeture -->
+<NOM DE BALISE></NOM DE BALISE>
+
+<!-- Sans balise de fermeture -->
+<NOM DE BALISE>
+```
+
+## Les balises HTML
+
+### Paragraphe
+
+```htmlmixed=
+<p>
+    Lorem ipsum
+</p>
+```
+
+### Titres
+
+```htmlmixed=
+<h1>Titre</h1>
+<h2>Titre</h2>
+<h3>Titre</h3>
+<h4>Titre</h4>
+<h5>Titre</h5>
+<h6>Titre</h6>
+```
+
+### Mise en forme de texte
+
+#### Gras
+
 ```html=
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus dignissimos atque nobis adipisci? Magni provident dolore cupiditate sit. Deleniti rerum praesentium accusantium sunt sint, blanditiis distinctio fugiat vitae voluptate ut.
-        Repellat ratione accusantium quibusdam ipsum illo numquam libero consectetur autem, aliquid modi sint, nostrum dicta voluptates unde porro? Excepturi, ipsa! Odit nisi vitae quae odio ex eligendi sit possimus iure.
-        Voluptatibus dignissimos sequi quam expedita iste asperiores explicabo officia eos nihil repudiandae fugit pariatur molestiae tenetur quibusdam similique quisquam odit eveniet adipisci sit dolorum temporibus, necessitatibus, eius dolore. Totam, adipisci.</p>
-<p> ceci est un paragraphe</p>
-
+<p>
+    <strong>Hey</strong>
+    <b>Le gras c'est la vie !<\b>
+</p>    
 ```
-## Mise en forme de texte
 
-### Gras
+#### Italic
 ```html=
-<strong>Hey</strong> <b> Hello </b>
-<b>Le gras c'est la vie !<\b>
+<p>
+    <i>Ceci est en italique</i>
+    <em>Ceci aussi</em>
+</p>
 ```
 
-### Italic
-```html=
-<p><i>Ceci est en italique</i><em>Ceci aussi</em></p>
-```
-### Souligné
+#### Souligné
 ```html= 
-<u>ceci est une phrase soulignée</u>
+<u>Ceci est une phrase soulignée</u>
 ```
-## Préformaté
 
+#### Préformaté
 ```html=
 <pre>
- (°.°)
-<(   )>
 </pre>
 ```
 
-## Liens
+#### Saut de ligne
+```htmlmixed=
+<br>
+<br/>
+</br>
+```
 
-### Lien vers une page
-```html=
+#### Isoler du contenu
+```htmlmixed=
+<span>Contenu isolé</span>
+```
+
+### Liens
+
+#### Lien vers une page
+```htmlmixed=
 <a href="https://www.google.com/"  target="_blank">Google<a>
 ```
 
-### Lien de messagerie
+#### Lien de messagerie
 ```html=
 <a href="mailto:test@test.fr"> exemple@mail.fr </a>
 ```
 
-## Listes
-```html=
-<li>Ceci est une liste</li>
-<li>Ceci aussi</li>
-```
-       
+### Listes
 
-### Ordonnée
-```html=
-<ol>
-    <li>Element1</li>
-    <li>Le 5e élément</li>
-</ol>
-```
-
-### Non ordonnée
-```html=
+#### Non Ordonnée
+```htmlmixed=
 <ul>
     <li>Element 1</li>
     <li>Element 2</li>
     <li>Element 3</li>
 </ul>
 ```
-    
-### Menu
-```html=
+
+#### Ordonnée
+```htmlmixed=
+<ol>
+    <li>Element 1</li>
+    <li>Element 2</li>
+    <li>Element 3</li>
+</ol>
+```
+
+#### Menu
+```htmlmixed=
 <menu>
     <li>Element 1<li>
     <li>Element 2<li>
@@ -130,17 +171,19 @@ Outils :
 </menu>
 ```
 
-### Avec description
+#### Avec description
 ```html=
 <dl>
     <dt>Sophie</dt>
     <dd>Elle ne s'appelle pas Claire</dd>
+    <dt>Claire</dt>
+    <dd>Elle ne s'appelle pas Sophie</dd>
 </dl>
 ```
 
+### Tableaux
 
-## Tableaux
-```html=
+```htmlmixed=
 <table>
     <thead>
         <tr>
@@ -161,32 +204,66 @@ Outils :
 </table>
 ```
 
-## Medias
-
-### Images
+### Division
 ```htmlmixed=
-<img src='google.png'>
+<div>
+    <p>Test</p>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+    </ul>
+</div>
 ```
 
-### Vidéo
+### Medias
+
+#### Image
+```htmlmixed=
+<img src='https://cdn-icons-png.flaticon.com/512/4436/4436481.png' alt='Icône de validation vert'>
+```
+
+#### Vidéo
 ```htmlmixed=
 <video controls>
-    <source src='video.mp4' type='video/mp4'>
-    <p>
-        Votre navigateur ne peut pas afficher cette vidéo
-    </p>
+    <source src='sample.mp4' type='video/mp4'>
+    <p>Votre navigateur ne peut pas afficher cette vidéo</p>
 </video>
 ```
 
-### Audio
+#### Audio
 ```htmlmixed=
-<audio controls source src='audio.mp3'>
-</audio>
+<audio controls src="sample.mp3"></audio>
 ```
 
-# CSS
+### Formulaires
 
-## Sélecteurs
+> L'élément form sert à délimiter un formulaire
+
+```htmlmixed=
+<form method="GET/POST" action="test.html">
+        <label for="mail">Email</label>
+        <input id="mail" name='email' type='email' placeholder="Email">
+        <label for="date">Date</label>
+        <input id="date" name='date' type='date'>
+        <input id="range" name='range' type='range' min="0" max="20">
+        <input id="number" name='number' type='number'>
+        <input id="password" name='password' type="password">
+        <select name="Sexe">
+            <option value="M">Masculin</option>
+            <option value="F">Féminin</option>
+            <option value="NB">Non Binaire</option>
+        </select>
+    <input type="submit" value="Envoyer">
+    </form>
+```
+
+### Boutons
+
+```htmlmixed=
+    <button>Bouton test</button>
+```
+
+## CSS
 
 ### Balise
 
@@ -206,6 +283,7 @@ p {
 
 ### Id
 
+L'identifiant doit être unique
 ```css=
 #identifiant {
     color: red;
@@ -260,39 +338,30 @@ Ici, on sélectionne les élément ayants la classe "small", dont la position da
 
 Si on ajoute de la parentalité à un sélecteur, sa priorité augmente (seulement par rapport aux sélecteurs de même priorité)
 
-## Unités
+### Unités
 
-- px pixel
-- em référence à la taille de police du parent direct
-- rem root em référence à la taille de police de la page (élément html)
-- % pourcentages
-- vw visual width
-- vh visual height
-- in inches
-- cm centimètres
+- px
 - pt point
 - pc pica
+- cm
+- in
 
-## Couleurs
+- em référence à la taille de police du parent direct
+- rem référence à la taille de police due la page (element html)
+- % 1% c'est 1% de la taille du parent
+- vw 1vw = 1% de la largeur de la fenêtre
+- vh 1vh = 1% de la hauteur de la fenêtre
+
+### Couleurs
 
 - Nom de couleur : red
 - Hexadécimal : #FFF
 - RGB : rgb(50,205,50)
 - RGBA : rgba(50,205,50, 0.5)
 
-## Background
+### Marges
 
-```css=
-img {
-    background-image: url(google.png);
-    background-size: cover;
-    background-position: center;
-}
-```
-
-## Marges
-
-### Internes
+#### Internes
 ```css=
 div {
     padding: 30px;
@@ -300,7 +369,7 @@ div {
 }
 ```
 
-### Externes
+#### Externes
 ```css=
 div {
     margin: 30px;
@@ -309,14 +378,14 @@ div {
 }
 ```
 
-### Bordures
+#### Bordures
 
 ```css=
     border-left: 23px black solid
     border: 23px black solid
 ```
 
-## Dimensions
+### Dimensions
 
 ```css=
 * {
@@ -327,34 +396,6 @@ div {
 }
 ```
 
-## Style de liste
-
-```css=
-ul {
-    list-style: none;
-}
-```
-Si on veut utiliser des puces personnalisées, mieux vaut le faire avec la propriété background qu'avec list-style.
-
-## Position
-
-Tous les objets du DOM sont considérés comme en position relative par défaut. Cependant tant qu'ils n'ont pas de propriété position de définie, ils ne seront pas considérés comme "positionnés"
-
-### Position relative
-
-La position relative permet à l'objet de se placer dans son contexte de bloc par rapport aux autres éléments.
-
-### Position absolue
-
-Elle permet de positionner un élément au premier plan, par rapport à son plus proche ancètre positionné.
-
-### Position fixed
-
-Elle permet de positionner un élément au premier plan par rapport à la fenètre.
-
-### Position sticky
-
-Elle permet d'appliquer une position absolue par défaut puis fixed lorsque la propriété top est atteinte.
 
 ## Display
 
@@ -364,6 +405,7 @@ Un élément de type inline:
 - va essayer de se placer en ligne
 - va occuper la largeur nécessaire à l'affichage de son contenu par défaut
 - peut contenir d'autres éléments inline, mais pas de block.
+- affecte seulement l'élément
 
 ### Block
 
@@ -371,183 +413,97 @@ Un élément de type block:
 - va toujours occuper toute la largeur disponible dans son parent
 - va toujours aller à la ligne
 - peut contenir d'autres éléments peut importe leurs types
+- affecte seulement l'élément
 
 ### Grid
 
 Un élément de type grid:
 - va se comporter comme une grille
 - peut contenir n'importe quel type d'élément
+- affecte les enfants
 
 ### Flex
 
 Un élément de type flex:
 - Va altérer le flux des éléments enfants qu'il contient en fonction des propriétés flex qu'on lui définit (align-items, justify-content etc...)
-
-CF : https://flexboxfroggy.com/#fr
+- affecte les enfants
 
 ### None
 
-Un élément en display non est caché et n'impacte plus le document
+Sert à cacher un élément
 
-## Pseudo-classes dynamiques
+## Ombres
 
-- :hover => lorsque la souris survole l'élément
-- :focus => lorsque le curseur est sur l'élement
-- :active => lorsque l'élément est cliqué
-- :visited => pour les liens ayants déjà été visités
-
-## Border Radius
-
-Border radius sert à définir des bords arrondis :
-
+### Texte
 ```css=
-img {
-   border-radius: 20px; 
-}
+text-shadow: 1px 1px 2px black;
 ```
 
-## Text Shadow
-
-Créer une ombre sur un texte
-
+### Boite
 ```css=
-p {
-    text-shadow: 1px 1px 2px black
-}
-```
-Les valeurs coresspondent respectivement à :
-- décalage horizontal
-- décalage vertical
-- flou
-i
-## Box Shadow
-
-Créer une ombre sur un texte
-
-```css=
-div {
-    box-shadow: 1px 1px 2px -1px black
-}
-```
-Les valeurs coresspondent respectivement à :
-- décalage horizontal
-- décalage vertical
-- flou
-- expension de l'ombre
-
-> On peut rajouter inset à la propriété pour transformer l'ombre en ombre interieure
-
-## Transformations
-
-```css=
-img {
-    transform: rotate(90deg);
-    transform: scale(0.5);
-    filter: sepia(0.5);
-}
+box-shadow: 1px 1px 2px -1px black;
 ```
 
-## Overflow
+## Position
 
-overflow sert à changer le comportement d'un élément lorsque son contenu dépasse de celui-ci.
+### Relative
+L'élément se positionnera par rapport à ses voisin et son parent
 
-```css=
-div {
-    overflow: hidden; 
-    overflow: scroll; 
-    overflow: auto;
-    overflow: overlay;
-}
-```
+### Absolute
+L'élément se positionnera par rapport à son ancètre le plus proche positionné*
 
-## Z Index
+> élément positionné : élément sur lequel la propriété position est définie
 
-Sert à changer le priorité d'affichage (arrière plan / premier plan etc.)
+### Fixed
+L'élément se positionnera par rapport à la fenêtre
 
-```css=
-div {
-    z-index: -1;
-}
-```
+## Transform
+Sert à appliquer des transformation graphiques à un élément sans changer son comportement initial.
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform
 
-# Animations CSS
+## Animations
 
-## Transition
-
-La propriété transition sert à rendre chaque changement css opéré sur un élément progressif (dans la mesure du possible)
-
-Par exemple pour faire changer la couleur d'un bouton progressivement lorsque l'on passe la souris dessus :
+### Transition
 
 ```css=
 button {
-    color : black;
-    background: white;
-    transition: 0.3s;
-}
-
-button:hover {
-    color : white;
-    background: black;
+    transition: 0.5s ease-in-out;
 }
 ```
 
-On peut rajouter des arguments à la propriété transition comme le délai, le lissage de l'animation, etc.
-CF Doc https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
-
-### Keyframe et animation
-
-Il est également possible de définir des animation gràce aux @keyframes
+### Keyframe
 
 ```css=
-@keyframes rotation {
+button {
+    animation: oscillation 1s infinite alternate;
+}
+
+@keyframes oscillation {
     0% {
-        transform: rotate(0deg);
+        font-size: 1em;
     }
-    
+
     100% {
-        transform: rotate(360deg);
+        font-size: 0.8em;
     }
 }
 ```
 
-On peut ensuite appliquer cette animation à un élément
+https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+
+## Medias Queries
 
 ```css=
-img:hover {
-    animation: rotation 3s;
-}
-```
-
-On peut rajouter des arguments à la propriété animation comme le délai, le lissage de l'animation, etc.
-CF Doc 
-https://developer.mozilla.org/fr/docs/Web/CSS/animation
-
-# Responsivité
-
-## Unités
-Il faut privilégier les unités adaptatives : em, rem, %, vw, vh.
-
-## Media query
-
-On peut créer des règles qui s'appliquerons uniquement sous certaines conditions de largeur/hauteur de fenètre rgâce aux média queries
-
-```css=
-@media screen and (max-width: 600px) {
-    body {
-        background: black;
+/* Les règles ci-dessous s'appliqueront en dessous de 900px */
+@media (max-width: 900px) {
+    tr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
-/* 
- * Ici, l'élément body aura un fond de couleur 
- * noir seulement lorsque la largeur de la
- * fenêtre sera inférieure où égale à 600px.
- */
 ```
 
-----
-
-
-# Exercice
+# Exercices
 
 ## 1
 
@@ -566,12 +522,6 @@ Créer une page affichant un formulaire avec les champs suivants :
 
 Lorsque l'on clique sur le bouton d'envoi, si nous n'avons pas rempli un champ, le navigateur nous bloque en nous indiquant quel champ pose problème
 CF : https://developer.mozilla.org/fr/docs/Web/HTML/Attributes/required
-
-
-https://file-examples.com/storage/fe352586866388d59a8918d/2017/04/file_example_MP4_480_1_5MG.mp4
-
-
-https://file-examples.com/storage/fe352586866388d59a8918d/2017/11/file_example_MP3_700KB.mp3
 
 ## 2
 
@@ -615,24 +565,13 @@ support@yourcompany.com</a>.
 </HTML>
 ```
 
-Modifier le html pour qu'il suive les conventions, puis en modifiant le html et le css, essayer d'arriver au plus proche du resultat suivant :
+Corriger le html pour qu'il suive les conventions, puis en modifiant le html et le css, essayer d'arriver au plus proche du resultat suivant :
 
 ![](https://hedgedoc.dawan.fr/uploads/upload_05829ff5ab14a77befb8a2300f7d097f.png)
 
 ## 3
 
-![](https://hedgedoc.dawan.fr/uploads/upload_b3856d6716e23d73d04f5b8478d2474b.jpg)
-
-
-La police utilisée est montserrat
-
-## 4
-
-A partir du htlm suivant, en utilisant css, créez un menu sticky comme suis :
-
-![](https://hedgedoc.dawan.fr/uploads/upload_0c8053c5154cd0b91d4dcac28bef0f61.png)
-
-
+Grâce au html suivant :
 ```htmlmixed=
 <!DOCTYPE html>
 <html lang="en">
@@ -644,28 +583,102 @@ A partir du htlm suivant, en utilisant css, créez un menu sticky comme suis :
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Menu horizontal sticky HTML et CSS</h1>
-    <nav>
-    <ul>
-        <li><a href="#">Cours Complets</a></li>
-        <li><a href="#">Articles</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">A propos</a></li>
-    </ul>
-    </nav>
-
-    <div class="conteneur">
-    <p>Du contenu sous le menu</p>
+    <h2>Made With Passion</h2>
+    <div>
+        <p>Bienvenue sur</p>
+        <h1>Made With Passion</h1>
+        <p class="resume"><i>
+            Applications, Programmes, Sites web, rien n'arrête nos équipes.
+            <br>
+            Des solutions sur-mesure pour répondre à tous vos besoins.
+            <br>
+            Nous adaptons notre travail à votre budget.
+            <br>
+            <br>
+            Nos collaborateurs sont tous des passionnés qui fournirons expertise, engagement, et implication dans vos projets.
+            <br>
+            <br>
+            Nous vous expliquerons toutes les étapes en temps et en heure, sans vous noyer sous les informations inutiles.
+            <br>
+            <br>
+            Notre méthode de gestion de projet étape par étape nous confère une rigeur et une qualité d'adaptation à toute épreuve.
+        </i></p>
     </div>
+    <hr>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <h3>Vitrine</h3>
+                    <p>Parce que l'expérience utilisateur et l'apparence sont des points crutiaux pour une bonne visibilité.</p>
+                </td>
+                <td>
+                    <p><b>D</b>ynamique</p>
+                    <p><b>E</b>fficace</p>
+                    <p><b>S</b>imple</p>
+                    <p><b>I</b>llustré</p>
+                    <p><b>G</b>raphique</p>
+                    <p><b>N</b>ouveau</p>
+                </td>
+                <td>
+                    <h3>Commerce</h3>
+                    <p>Calls to Action, Référencement, Analyses marketing… Aucun point n'ai laissé au hasard.</p>
+                </td>
+                <td>
+                    <p><b>V</b>isuel</p>
+                    <p><b>E</b>rgonomie</p>
+                    <p><b>N</b>avigation</p>
+                    <p><b>T</b>endance</p>
+                    <p><b>E</b>sthétisme</p>
+                </td>
+                <td>
+                    <h3>Gestion</h3>
+                    <p>Les avantages d'un outil de gestion en ligne ? Accès illimité de n'importe où, mises à jours automatiques, pas d'installation...</p>
+                </td>
+                <td>
+                    <p><b>O</b>utils</p>
+                    <p><b>F</b>ournisseurs</p>
+                    <p><b>F</b>iabilité</p>
+                    <p><b>I</b>nterface</p>
+                    <p><b>C</b>lients</p>
+                    <p><b>E</b>spaces</p>
+                </td>
+                <td>
+                    <h3>Technique</h3>
+                    <p>La puissance d'internet canalisée par des experts pour vos besoins. Aucune surprise. Qualité et performances avant tout.</p>
+                </td>
+                <td>
+                    <p><b>P</b>ratique</p>
+                    <p><b>E</b>xigeant</p>
+                    <p><b>R</b>apide</p>
+                    <p><b>F</b>uturiste</p>
+                    <p><b>S</b>écurisé</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
 ```
+(
+Ajouter du css et arriver au plus proche du résultat suivant :
 
-## 5
+<img src="https://i.ibb.co/VVyDZK1/Sans-titre.png" alt="Sans-titre" border="0">
 
-En reprenant le css créé précédemment, ajouter des listes déroulantes comme suis :
+Lien du fond d'écran : https://i.ibb.co/Gtk9Bq1/bg-accueil.jpg
 
-![](https://hedgedoc.dawan.fr/uploads/upload_649cee80e2569234d23975ee54f1bf25.png)
+# Ex 4
+
+Reproduire le template suivant :
+
+<img src="https://i.ibb.co/vqywRLP/Sans-titre.png">
+
+# Ex 5
+
+Modifier le css pour réaliser les animations
+
+<img src="https://s11.gifyu.com/images/ScarN.gif">
 
 ```htmlmixed=
 <!DOCTYPE html>
@@ -675,73 +688,141 @@ En reprenant le css créé précédemment, ajouter des listes déroulantes comme
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bouton.css">
 </head>
 <body>
-    <h1>Menu déroulant sticky HTML et CSS</h1>
-    <nav>
-        <ul>
-            <li class="deroulant"><a href="#">Cours Complets &ensp;</a>
-            <ul class="sous">
-                <li><a href="#">Cours HTML et CSS</a></li>
-                <li><a href="#">Cours JavaScript</a></li>
-                <li><a href="#">Cours PHP et MySQL</a></li>
-            </ul>
-            </li>
-            <li class="deroulant"><a href="#">Articles &ensp;</a>
-            <ul class="sous">
-                <li><a href="#">CSS display</a></li>
-                <li><a href="#">CSS position</a></li>
-                <li><a href="#">CSS float</a></li>
-            </ul>
-            </li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">A propos</a></li>
-        </ul>
-    </nav>
-
-    <div class="conteneur">
-    <p>Du contenu sous le menu</p>
-    </div>
+    <button class="fill">Fill Left</button>
+    <button class="raise">Raise</button>
+    <button class="fillin">Fill In</button>
+    <button class="pulse">Pulse</button>
+    <button class="close">Close</button>
+    <button class="radius">Radius</button>
+    <button class="grow">Grow</button>
+    <button class="rainbow">Rainbow</button>
 </body>
 </html>
 ```
 
-## 6
-
-Reproduire l'animation du bouton du portfolio
-
-```htmlmixed=
-<button>
-    <p>Contact</p>
-    <div class="btn-bg"></div>
-</button>
-```
-
-
+```css=
 body {
     background-color: rgb(31, 31, 31);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
     margin: 0;
     gap: 20px;
+    padding-top: calc(50vh - 50px);
 }
 
 button {
-    border: 1px solid black;
+    border: 1px solid #fff;
     background: none;
     padding: 10px 30px;
-    transition: 0.3s;
+    transition: 0.5s;
     position: relative;
-    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    width: 150px;
+    margin: auto;
 }
 
-## 7 Rendre les portfolio responsives
+button, button:focus, button:hover, button:active {
+    outline: none;
+}
 
-- Ex 3
-- dossier template à la racine du projet
+.fill {
+    border-color: orangered;
+    color: orangered;
+}
+
+.raise {
+    border-color: red;
+    color: red;
+}
+
+.fillin {
+    border-color: rgb(255, 0, 115);
+    color: rgb(255, 0, 115);
+}
+
+.pulse {
+    border-color: rgb(140, 0, 255);
+    color: rgb(140, 0, 255);
+}
+
+.close {
+    border-color: rgb(53, 46, 255);
+    color: rgb(53, 46, 255);
+}
+
+.radius {
+    border-color: rgb(0, 179, 255);
+    color: rgb(0, 179, 255);
+}
+
+.grow {
+    border-color: rgb(0, 255, 149);
+    color: rgb(0, 255, 149);
+}
+```
+
+## 6
+![](https://i.ibb.co/jhWt8VY/template2.png)
+
+<img src="https://i.ibb.co/z5fSk6g/pic01.jpg" alt="pic01" border="0">
+<img src="https://i.ibb.co/drv1Xdh/pic02.jpg" alt="pic02" border="0">
+<img src="https://i.ibb.co/tDZHjFq/Sans-titre-removebg-preview.png" alt="Sans-titre-removebg-preview" border="0">
+
+## 7
+rendre responsive les templates créés aux exercices 4 et 6
+
+## 8
+Reproduire la page : https://getbootstrap.com/docs/5.3/examples/album/
+Grâce à Bootstrap.
+
+# Compléments
+
+## Référencement
+
+Points importants :
+- 1 seule balise h1 par page
+- balises alt sur les images
+- hierarchie des titres h2 > h3 ...
+- accessibilité (contrast, balises alt)
+- responsive
+- Liens / Maillage
+    - Interne
+    - Externe
+- Mots clés & Sémantique
+- Localisation
+- Performances
+- Récurence de contenu
+
+## Processus de création
+
+- Objectifs
+
+- Charte graphique
+    - Couleurs
+    - Logo
+    - Polices
+    - Icons
+- Maquette
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
