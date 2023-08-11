@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introduction</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <header>
+            <!-- <nav>
+                <ul style="list-style: none; padding: 0; display: flex; gap: 10px;">
+                    <li><a href="../Jour 1">Jour 1</a></li>
+                    <li><a href="../exercices">Exercices</a></li>
+                </ul>
+            </nav> -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../Jour 1/intro.html">HTML</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        <p>Hello <br><span>World !</span></p>
+        <h1>Titre</h1>
+        <h2>Titre</h2>
+        <h3>Titre</h3>
+        <h4>Titre</h4>
+        <h5>Titre</h5>
+        <h6>Titre</h6>
+        <p>
+            <strong>Hey</strong>
+            <b>Le gras c'est la vie !</b>
+        </p>
+        <p>
+            <i>Ceci est en italique</i>
+            <em>Ceci aussi</em>
+        </p>
+        <p><u>Ceci est une phrase soulignée</u></p>
+        <pre>
+            Test
+
+
+
+            test
+        </pre>
+        <a href="https://google.fr/">Google</a>
+        <a href="mailto:test@test.fr"> exemple@mail.fr </a>
+        <ul>
+            <li>Element 1</li>
+            <li>Element 2</li>
+            <li>Element 3</li>
+        </ul>
+        <ol>
+            <li>Element 1</li>
+            <li>Element 2</li>
+            <li>Element 3</li>
+        </ol>
+        <menu>
+            <li>Element 1</li>
+            <li>Element 2</li>
+            <li>Element 3</li>
+        </menu>
+        <dl>
+            <dt>Sophie</dt>
+            <dd>Elle ne s'appelle pas Claire</dd>
+            <dt>Claire</dt>
+            <dd>Elle ne s'appelle pas Sophie</dd>
+        </dl>
+        <table>
+            <thead>
+                <tr>
+                    <th>Prénom</th>
+                    <th>Nom</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sophie</td>
+                    <td>Dupont</td>
+                </tr>
+                <tr>
+                    <td>Claire</td>
+                    <td>Chazal</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <video controls>
+        <source src='video/sample.mp4' type='video/mp4'>
+        <p>Votre navigateur ne peut pas afficher cette vidéo</p>
+    </video>
+    <audio controls src="sample.mp3"></audio>
+    <form method='POST'>
+        <label for="mail">Email</label>
+        <input id="mail" name='email' type='email' placeholder="Email">
+        <label for="date">Date</label>
+        <input id="date" name='date' type='date'>
+        <input id="range" name='range' type='range' min="0" max="20">
+        <input id="number" name='number' type='number'>
+        <input id="password" name='password' type="password">
+        <select name="Sexe">
+            <option value="M">Masculin</option>
+            <option value="F">Féminin</option>
+            <option value="NB">Non Binaire</option>
+        </select>
+        <input type="submit" value="Envoyer">
+    </form>
+    <button>Bouton test</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>
