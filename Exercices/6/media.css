@@ -1,0 +1,116 @@
+@media (max-width:1200px) {
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .dual {
+        grid-template-columns: 1fr;
+    }
+
+    .card-btns {
+        margin: auto;
+        padding: 0 30px;
+        width: 100%;
+    }
+
+    .card-content {
+        padding: 30px;
+    }
+
+    .card {
+        grid-template-columns: 400px 1fr;
+    }
+
+    .card-reverse {
+        grid-template-columns: 1fr 400px;
+    }
+}
+
+@media (max-width:1000px) {
+    .icons {
+        padding: 0;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+    }
+
+    .card .gradient {
+        max-height: 300px;
+    }
+
+    .card-reverse > div:last-child {
+        grid-row: 1;
+    }
+
+    .card-reverse .gradient {
+        width: 100%;
+    }
+
+    .dual {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer > div {
+        max-width: 340px;
+        margin: auto;
+    }
+}
+
+@media (max-width:600px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    form > div, .icons, .footer > div {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        display: block;
+    }
+
+    nav ul {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .footer > div > div {
+        margin: auto;
+    }
+
+    p {
+        margin: 20px 0;
+    }
+
+    .footer > div {
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .laptop {
+        height: unset;
+    }
+
+    .icons, .contact, .footer {
+        margin: 50px 0;
+    }
+}

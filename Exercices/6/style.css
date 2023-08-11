@@ -29,6 +29,7 @@ header > a {
 nav ul {
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -132,6 +133,10 @@ button::after {
     overflow: hidden;
 }
 
+.card .gradient {
+    height: 100%;
+}
+
 .gradient > img {
     object-fit: cover;
     height: 100%;
@@ -174,7 +179,11 @@ button::after {
 }
 
 .card-content {
-    padding: 100px;
+    padding: 30px 100px;
+}
+
+.card-content h2 {
+    margin-top: 0;
 }
 
 .card-reverse {
@@ -222,6 +231,10 @@ button::after {
     rotate: -45deg;
 }
 
+.icons h2 {
+    text-align: center;
+}
+
 .card-btns {
     display: grid;
     gap: 20px;
@@ -241,11 +254,11 @@ button::after {
 .contact {
     text-align: center;
     margin: 150px auto;
-    width: 1000px;
+    max-width: 1000px;
 }
 
 .contact p {
-    width: 820px;
+    max-width: 820px;
     margin: 50px auto;
 }
 
@@ -287,7 +300,7 @@ form > textarea {
 }
 
 .footer {
-    width: 820px;
+    max-width: 820px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 150px auto;
@@ -303,4 +316,8 @@ form > textarea {
 .copyrights {
     text-align: center;
     margin-bottom: 0;
+}
+
+.dual h2 {
+    margin-top: 50px;
 }
