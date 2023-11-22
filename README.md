@@ -5,26 +5,14 @@
 Télécharger Visual Studio Code
 > https://code.visualstudio.com/download
 
-Serveur Discord
-> https://discord.gg/ADu4Y2NvYT
-
-Lien conférence
-> https://bbb.dawan.fr/b/cle-hci-tyj-dqt
-
 Doc HTML
 > https://developer.mozilla.org/fr/docs/Web/HTML
-
-Repo github
-> https://github.com/DELORD-C/HTML-CSS
-
+> 
 Ahaslides
 > https://ahaslides.com/FDJ
 
 CSS Diner
 > https://flukeout.github.io/
-
-Mon Compte Dawan
-> https://moncompte.dawan.fr
 
 Material Design
 > https://www.youtube.com/watch?v=rrT6v5sOwJg
